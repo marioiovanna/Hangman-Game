@@ -1,0 +1,58 @@
+
+
+body{
+	background-image: url(../img/back.png);
+}
+
+.icon {
+	float: left;
+	width: 65px;
+	height: 65px;
+}
+
+.icon2 {
+	float: right;
+	width: 65px;
+	height: 65px;
+}
+	
+.active {
+	color: white;
+}
+
+.text {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.mainbox {
+	background-color: white;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+footer{
+	background-color: none;
+	font-size: 40px;
+	font-weight: bold;
+	width: 60%;
+	color: white;
+	animation: myfirst 4s alternate infinite ;
+}
+
+
+@media screen and (min-width:700px) {
+	@keyframes myfirst {
+		0% {
+			transform: translateX(33%);
+		}
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+  
+ 

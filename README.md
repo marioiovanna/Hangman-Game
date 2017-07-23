@@ -1,6 +1,6 @@
 # Hangman Game
 
-Hangman game create with Javascript. Simple game where we have to guess the word given. This edition is base on 90's vieo games as Pacman, Contra, Adventure Island, Duck Hunt and more...
+Hangman game create with Javascript. Simple game where we have to guess the word given. This edition is base on 90's video games as Pacman, Contra, Adventure Island, Duck Hunt and more...
 
 ![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/main.png "Main")
 

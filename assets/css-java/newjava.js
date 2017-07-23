@@ -39,6 +39,8 @@ function waitfornext() {
 
 document.onkeyup = function () {
 
+    console.log(wordToGuess);
+
     if (start === true) {
 
             $('.title').html('*Word to Guess*' + '<hr><br>');
@@ -54,8 +56,6 @@ document.onkeyup = function () {
                         $('.words').html(guessArray);
                     }
                 }
-
-                console.log(wordToGuess);
 
                 $('#livesd').html(lives);
                 $('#loss').html(loss);

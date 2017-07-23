@@ -19,9 +19,10 @@ The game is default with 20 lives, for press letters, and 5 total lifes to accer
 ### COUNTER
 In this box, it will show you your **winnings**, **losses**, **lives remaning** (start with 20) and **letter guessed** (it will populate as you press a key)
 Every time you loose or win, it will reset, adding **wins** or **looses**.
-![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/counter.png "Main")
-
 ![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/lifes.png "Main")
+
+                              Main box display:  
+![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/counter.png "Main")
 
 #
 

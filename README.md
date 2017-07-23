@@ -5,6 +5,9 @@ Hangman game create with Javascript. Simple game where we have to guess the word
 ![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/main.png "Main")
 
 
+#
+#
+
 ### START 
 To start the game just press any key on the keyborad. The screen will show you a random word to be guess, and then we need to start guessing those letters.
 Some words contain SPACE ( _ ), so the space bar is part of the range.

@@ -12,6 +12,7 @@ Hangman game create with Javascript. Simple game where we have to guess the word
 To start the game just press any key on the keyborad. The screen will show you a random word to be guess, and then we need to start guessing those letters.
 Some words contain SPACE ( _ ), so the space bar is part of the range.
 The game is default with 20 lives, for press letters, and 5 total lifes to accert the words. 
+
 ![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/start.png "Main")
 
 #
@@ -19,9 +20,10 @@ The game is default with 20 lives, for press letters, and 5 total lifes to accer
 ### COUNTER
 In this box, it will show you your **winnings**, **losses**, **lives remaning** (start with 20) and **letter guessed** (it will populate as you press a key)
 Every time you loose or win, it will reset, adding **wins** or **looses**.
+
 ![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/lifes.png "Main")
 
-                              Main box display:  
+                            Main box display:  
 ![alt text](https://github.com/marioiovanna/Hangman-Game/blob/master/assets/repo/counter.png "Main")
 
 #

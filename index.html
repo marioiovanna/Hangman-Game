@@ -1,73 +1,82 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="utf-8">
-	<title>Hangman!</title>
+    <meta charset="utf-8">
+    <title>Hangman!</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
-
-	<link rel="stylesheet" type="text/css" href="assets/css-java/style.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css-java/style.css">
+    <script src="assets/css-java/newjava.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 
-<!-- NAVBAR -->	
+<body>
+<!-- NAVBAR -->
+<div class="container">
 <nav class="navbar navbar-inverse">
     <div class="navbar-center">
-      <img src="assets/img/icon.png" alt="icon1" class="icon">
-      <img src="assets/img/icon.png" alt="icon2" class="icon2">
-</div>
-    <div class="text" class="nav navbar-nav" >
-       <h1 class="active">HANGMAN GAME	</h1>
+        <img src="assets/img/icon.png" alt="icon1" class="icon">
+        <img src="assets/img/icon.png" alt="icon2" class="icon2">
+    </div>
+    <div class="nav navbar-nav">
+        <h1 class="active">HANGMAN GAME </h1>
     </div>
 </nav>
-  
+</div>
+
 <!-- LEFT CONTAINER -->
-<div class="container">    
-  <div class="row">
-    <div class="col-sm-2">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 over">
+        </div>
 
-     </div>
+        <!-- MIDDLE CONTAINER -->
+        <div class="col-md-8">
+            <div class="mainbox">
+                <div class=row>
 
-<!-- MIDDLE CONTAINER -->
-    <div  class="col-sm-8 text-center"> 
-     <div class="mainbox">
-      <h1>Welcome</h1>
+                    <div class="col-md-2">
+                    </div>
 
-      <h2><div class="word">WORDS TO GUESS</div></h2>
-      
+                    <div class="col-lg-8 text-center">
+                        <br>
+                        <h2><div class="title">
+                        </div></h2>
+                        <h2><div class="words">
+                        Press ANY Key To Start
+                        </div></h2>
+                        <br>
+                        <br>
+                        <p>Wins:
+                        <p id="won">0</p></p>
+                        <br>
+                        <p>Losses:
+                        <p id="loss">0</p></p>
+                        <br>
+                        <p>Lives Remaining:
+                        <p id="livesd">20</p></p>
+                        <br>
+                        <p>Letters Guessed So Far:
+                        <p id="guess"></p><br></p>
+                        <br>
+                    </div>
 
-      WIN:<div class="win">0</div>
-      LOSS:<div class="loss">0</div>
+                <!-- RIGHT CONTAINER -->
+                <div class="col-sm-2 over">
+                </div>
 
-      <br>
+                </div>
+            </div>
+        </div>
     </div>
-
-      <hr>
-
-    </div>
-
-<!-- RIGHT CONTAINER -->
-    <div class="col-sm-2">
-     
-     </div>
-
+</div>
 
 <!-- FOOTER -->
 <footer class="navbar-fixed-bottom container-fluid text-center">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-4">Thanks for Playing !</div>
-  <div class="col-sm-4"></div>
+    <div class="textloco">Thanks for Playing !</div>
 </footer>
-
-
-
-
-
-
-<body>
 
 </body>
 </html>

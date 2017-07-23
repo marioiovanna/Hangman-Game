@@ -1,49 +1,74 @@
+$(document).ready(function(){
 
+  console.log('no quiero esto');
 
-var words = [
-	['a','d','v','e','n','t','u','r','e',__,'i','s','l','a','n','d']
-	['a','l','o','n','e',__,'i','n',__,'t','h','e',__,'d','a','r','k']
-	['c','o','n','t','r','a']
-	['m','o','n','k','e','y',__,'i','s','l','a','n','d']
-	
-	];
+  var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s","t", "u", "v", "w", "x", "y", "z"];
 
-var win = 0;
-var loss = 0;
-var guesses = [];
+  var words = ['a', 'ability', 'able', 'account', 'across', 'act', 'action', 'activity', 'actually', 'add', 'address', 'administration', 'admit', 'adult', 'affect', 'after', 'again', 'air', 'all'];
 
+  var guessesMade = [];
+  var wins = 0;
+  var losses = 0;
+  var lives = 12;
+  var wordToGuess = [];
+  var guessArray = [];
 
-document.onkeyup = function(event){
+  function resetGame(){
+    lives = 12;
+    guessesMade = [];
+    guessArray = [];
+    wordToGuess = words[Math.floor(Math.random() * words.length)].toLowerCase().split('');
+    for(let i=0; i<wordToGuess.length; i++){
+      guessArray.push("_");
+    }
+    refreshView();
+  }
 
-	var userword = even.key;
+  function refreshView(){
+    $("#guessWord").text(guessArray.join(''));
+    $("#guessesMade").text("guesses made: "+guessesMade.join(' '));
+    $("#lives").text("lives: "+lives);
+    $("#wins").text("wins: "+wins);
+    $("#losses").text("losses: "+losses);
+  }
 
+  document.onkeyup = function(event) {
 
-	if (event = 1) {
-		computerguess = words.
-	}
+    console.log('this works');
 
+  	var userGuess = event.key;
 
+    var checker = letters.indexOf(userGuess);
 
+    console.log(userGuess);
+    console.log(checker);
 
+      if(checker >= 0){
 
+      if(wordToGuess.indexOf(userGuess) >= 0){
+        for(let i=0; i<wordToGuess.length; i++){
+          if(userGuess === wordToGuess[i]){
+            guessArray[i] = userGuess;
+          }
+        }
+      }
 
+      if(wordToGuess.join('') === guessArray.join('')){
+        wins++;
+        resetGame();
+      }
+      else if(lives <= 0){
+        losses++;
+        resetGame();
+      }
+      else{
+        lives--;
+        guessesMade.push(userGuess);
+        refreshView();
+      }
+    }
+  };
 
+  resetGame();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log(userword)
-
-}
-
+});

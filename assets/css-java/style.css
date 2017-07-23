@@ -2,6 +2,8 @@
 
 body{
 	background-image: url(../img/back.png);
+	background-size: 80% auto;
+	font-family: 'Press Start 2P', cursive;
 }
 
 .icon {
@@ -15,17 +17,14 @@ body{
 	width: 65px;
 	height: 65px;
 }
-	
+
 .active {
 	color: white;
-}
-
-.text {
     position: relative;
     width: 100%;
     left: 0;
     top: 0;
-    text-align: center;
+    margin-left: 70%;
 }
 
 .mainbox {
@@ -35,24 +34,39 @@ body{
 	border-radius: 100px / 50px;
 }
 
+#guess {
+	color: red;
+}
+
+#overpic {
+	height: 300px;
+	position: absolute;
+	z-index: 1;
+	margin-top: 80px;
+}
+
 footer{
-	background-color: none;
-	font-size: 40px;
+	background-color: transparent;
+	font-size: 35px;
 	font-weight: bold;
 	width: 60%;
 	color: white;
 	animation: myfirst 4s alternate infinite ;
 }
 
+.textloco {
+	margin-bottom: 50px;
+}
 
 @media screen and (min-width:700px) {
 	@keyframes myfirst {
 		0% {
-			transform: translateX(33%);
+			transform: translateX(100%);
 		}
 		100% {
-			transform: translateX(-50%);
+			transform: translateX(-90%);
 		}
 	}
+}
   
  
